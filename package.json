@@ -1,0 +1,68 @@
+{
+  "name": "webpack_demos",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build01": "webpack --config 01_gettingstarted/webpack.config.js",
+    "build02": "webpack --config 02_assetmanagement/webpack.config.js",
+    "build03": "webpack --config 03_outputmanagement/webpack.config.js",
+    "build04": "webpack --config 04_development/webpack.config.js",
+    "build04:watch": "webpack --watch --config 04_development/webpack.config.js",
+    "build04:dev": "webpack-dev-server --open --config 04_development/webpack.config.js",
+    "build05:dev": "webpack-dev-server --open --config 05_codesplitting/webpack.config.js",
+    "build05": "webpack --config 05_codesplitting/webpack.config.js",
+    "build06": "webpack --config 06_caching/webpack.config.js",
+    "build07": "webpack --config 07_authoringlibraries/webpack.config.js",
+    "build08": "webpack-dev-server --open --config 08_hotmodulereplacement/webpack.config.js",
+    "build09": "webpack --config 09_treeshaking/webpack.config.js",
+    "start10:dev": "webpack-dev-server --open --config 10_production/webpack.dev.js",
+    "build10:prod": "webpack --config 10_production/webpack.prod.js",
+    "start11": "webpack-dev-server --open --config 11_lazyloading/webpack.config.js",
+    "build11": "webpack --config 11_lazyloading/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "chenMM",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.14.155",
+    "autoprefixer": "^9.8.0",
+    "babel-loader": "^8.1.0",
+    "browserslist": "^4.12.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.5.3",
+    "cssnano": "^4.1.10",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "less": "^3.11.2",
+    "less-loader": "^6.1.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "style-loader": "^1.2.1",
+    "svg-url-loader": "^6.0.0",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2",
+    "xml-loader": "^1.2.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "lodash": "^4.17.15"
+  },
+  "browserslist": {
+    "production": [
+      "> 1%",
+      "ie 10"
+    ],
+    "modern": [
+      "last 1 chrome version",
+      "last 1 firefox version"
+    ],
+    "ssr": [
+      "node 12"
+    ]
+  }
+}
