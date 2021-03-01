@@ -41,7 +41,7 @@ module.exports = {
     //每次构建之前先将上次dist目录清除掉 options.cleanStaleWebpackAssets:false->保留index.html文件
     new CleanWebpackPlugin({cleanStaleWebpackAssets: false}),
     new HtmlWebpackPlugin({
-      title: 'Development'
+      title: 'Code Split'
     })
   ]
 }

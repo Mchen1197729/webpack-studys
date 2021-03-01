@@ -1,7 +1,7 @@
 {
   "name": "webpack_demos",
   "version": "1.0.0",
-  "description": "",
+  "description": "学习webpack记录",
   "private": true,
   "scripts": {
     "build01": "webpack --config 01_gettingstarted/webpack.config.js",

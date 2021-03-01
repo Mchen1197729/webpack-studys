@@ -94,7 +94,7 @@ module.exports = {
       {
         test: /\.xml$/,
         /*
-        * 1.xml-loader用于处理xml文件 就是讲xml文件转换成json对象格式
+        * 1.xml-loader用于处理xml文件 就是将xml文件转换成json对象格式
         *
         * */
         use: ['xml-loader']
